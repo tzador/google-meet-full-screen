@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Full Screen",
+  "version": "1.0",
+  "description": "Adds a button to make the largest(screen sharing) video Full Screen in Google Meet.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
