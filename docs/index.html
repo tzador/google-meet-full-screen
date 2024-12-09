@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarklet for making Google Meat Fullscreen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Optional: Link to your CSS file -->
+  </head>
+  <body>
+    Google Meat
+    <a
+      href="javascript:%5B...document.querySelectorAll(%22video%22)%5D.map((video)%20%3D%3E%20(%7Bvideo%2C%20pixels%3A%20video.offsetWidth%20*%20video.offsetHeight%7D)).sort((a%2C%20b)%20%3D%3E%20b.pixels%20-%20a.pixels)%5B0%5D.video.requestFullscreen()"
+      >Fullscreen</a
+    >
+    Bookmarklet. Drag it into your bookmarks bar.
+  </body>
+</html>
